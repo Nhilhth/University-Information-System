@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Information System - Student Dashboard</title>
+    
+    <link rel="stylesheet" href="../css/student/index.css">
+
+    <link rel="stylesheet" href="../css/student/dashboard-student.css"> 
+
+    <!-- <link rel="stylesheet" href="../css/student/chi-tiet-nguoi-dung.css"> -->
+
+    <link rel="stylesheet" href="../css/student/information.css">
+
+    <link rel="stylesheet" href="../css/student/registration.css">
+    
+    <link rel="stylesheet" href="../css/student/schedule.css">
+
+    <link rel="stylesheet" href="../css/student/courses.css">
+    
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;700&display=swap" />
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="../img/Group.svg" alt="University Logo">
+            <h2>
+                <span>U</span>niversity<br />
+                Information<br />
+                System
+            </h2>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#" class="nav-link active"
+                       data-page="pages/dashboard-student.html"
+                       data-title="Trang chủ"
+                       data-controls="partials/search-bar.html"> <span class="material-symbols-outlined">grid_view</span>
+                        <span>Trang chủ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"
+                        data-page="pages/schedule.html"
+                        data-title="Lịch học"
+                        data-controls="partials/search-bar.html"> <span class="material-symbols-outlined">calendar_today</span>
+                        <span>Lịch học</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"
+                        data-page="pages/courses.html"
+                        data-title="Khóa học của tôi"
+                        data-controls="partials/search-bar.html"> <span class="material-symbols-outlined">school</span>
+                        <span>Khóa học của tôi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"
+                        data-page="pages/information.html"
+                        data-title="Thông tin sinh viên"
+                        data-controls="partials/search-bar.html"> <span class="material-symbols-outlined">star</span>
+                        <span>Thông tin sinh viên</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link"
+                        data-page="pages/registration.html"
+                        data-title="Đăng ký môn học"
+                        data-controls="partials/search-bar.html"> <span class="material-symbols-outlined">tune</span>
+                        <span>Đăng ký môn học</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="bottom-nav">
+            <ul>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">help</span>
+                        <span>Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span>Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link">
+                        <span class="material-symbols-outlined">logout</span>
+                        <span>Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="header-left">
+                <h1 id="page-title">Trang chủ</h1>
+                <div class="search-wrapper">
+                    <div id="dynamic-controls-slot"></div>
+                    
+                    <span class="material-symbols-outlined icon-btn">notifications</span>
+                    <span class="material-symbols-outlined icon-btn">mail</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div class="user-profile">
+                    <img src="../img/image 10.png" alt="User Avatar">
+                    <div class="user-info">
+                        <span class="user-name">Sinh viên</span>
+                        <span class="user-role">student</span>
+                    </div>
+                    <span class="material-symbols-outlined dropdown-icon">arrow_drop_down</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="content-area">
+            </section>
+    </main>
+
+    <script src="../js/student/main.js"></script>
+    <script src="../js/student/dashboard-student.js"></script>
+    <script src="../js/student/schedule.js"></script>
+    <script src="../js/student/courses.js"></script>
+    <script src="../js/student/information.js"></script>
+    <script src="../js/student/registration.js"></script>
+</body>
+</html>
